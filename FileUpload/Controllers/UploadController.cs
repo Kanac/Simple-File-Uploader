@@ -24,7 +24,7 @@ namespace FileUpload.Controllers
         public async Task<string> UploadFile([FromForm] IFormFile file)
         {
             string fName = file.FileName;
-            string path = Path.Combine($"C:/Users/anthonychui/Downloads/{Guid.NewGuid()} {file.FileName}");
+            string path = Path.Combine($"D:/{Guid.NewGuid()} {file.FileName}");
             using (var stream = new FileStream(path, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
