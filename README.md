@@ -26,4 +26,4 @@ public async uploadBlob(blob: Blob) {
 ```
 
 # File Location
-The file will be saved as `{GUID()} {FileName}` and will be located in the FileUpload folder.
+The file will be saved as `{GUID()} {FileName}` and will be located in the FileUpload folder https://github.com/Kanac/Simple-File-Uploader/tree/main/FileUpload.
