@@ -24,3 +24,6 @@ public async uploadBlob(blob: Blob) {
         .catch(error => console.log('error', error));
 }
 ```
+
+# File Location
+The file will be saved in the given format {GUID()} {FileName} and will be located in the FileUpload folder.
