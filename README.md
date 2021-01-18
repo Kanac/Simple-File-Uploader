@@ -26,4 +26,4 @@ public async uploadBlob(blob: Blob) {
 ```
 
 # File Location
-The file will be saved in the given format {GUID()} {FileName} and will be located in the FileUpload folder.
+The file will be saved as `{GUID()} {FileName}` and will be located in the FileUpload folder.
