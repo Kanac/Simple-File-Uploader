@@ -11,7 +11,7 @@ Simple File Uploader Web Server with an API endpoint that accepts files
 ```
 public async uploadBlob(blob: Blob) {
     var formdata = new FormData();
-    formdata.append('file', blob);
+    formdata.append('file', blob, 'test.mp4');
 
     var requestOptions = {
         method: 'POST',
