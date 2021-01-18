@@ -23,8 +23,7 @@ namespace FileUpload.Controllers
         [Route("api/upload/file")]
         public async Task<string> UploadFile([FromForm] IFormFile file)
         {
-            string fName = file.FileName;
-            string path = Path.Combine($"C:/{Guid.NewGuid()} {file.FileName}");
+            string path = Guid.NewGuid() + " " + file.FileName;
             using (var stream = new FileStream(path, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
